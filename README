@@ -16,16 +16,6 @@ L'algoritmo utilizzato per il calcolo dell'affinità è [KNN](https://it.wikiped
 Per sviluppare questo programma non è stata utilizzata alcuna libreria esterna. 
 Gli unici moduli esterni utilizzati sono il modulo `csv` utilizzato per aprire il file CSV contenente il dataset dei Pokémon e (nella versione per jupyter notebook) il modulo `ipyplot` per dare un feedback visivo dei valori di output del programma. Il resto è sviluppato da zero con un approccio procedurale.
 
-Se invece preferisci fare partire il progetto con il jupyter notebook allegato ti basterà installare le dipendenze presenti nel file `requirements.txt`:
-
-`pip install -r requirements.txt` 
-
-lanciare il server jupyter:
-
-`jupyter notebook`
-
-e cliccare sul notebook nella pagina del browser che si aprirà subito dopo. 
-
 Happy coding!
 
 ### CREDITS
@@ -51,16 +41,6 @@ The algorithm used to compute the similarity is the [KNN](https://en.wikipedia.o
 
 During the development of the software no external libraries were used. 
 The only modules used were `csv` to handle the CSV file containing the Pokémon dataset and (in the jupyter notebook) the `ipyplot` module to give a visual feedback of the program outputs. The core of the algorithm was developed from scratch with a procedural approach. 
-
-Should you prefer starting the project with the attached jupyter notebook, you'll need to install the dependencies in the file `requirements.txt` with the following command:
-
-`pip install -r requirements.txt` 
-
-then run the jupyter server:
-
-`jupyter notebook`
-
-and click the notebook link on the page that will pop-up.
 
 Happy coding!
 
