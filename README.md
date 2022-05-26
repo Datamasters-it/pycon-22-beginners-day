@@ -35,7 +35,7 @@ Ogni `Pokémon` nel nosto insieme di dati sarà rappresentato dalle seguenti car
 - Velocità
 ```
 
-Obiettivo dell'algoritmo è quello di confrontare il valore di ciascuna di queste caratteristiche, e restituire i ``k` pokémon _maggiormente simili_ (i.e. alternativamente, a minore distanza), dati i paramentri della _query di ricerca_.
+Obiettivo dell'algoritmo è quello di confrontare il valore di ciascuna di queste caratteristiche, e restituire i `k` pokémon _maggiormente simili_ (i.e. alternativamente, a minore distanza), dati i paramentri della _query di ricerca_.
 
 🧑‍💻 **Happy coding!** 👩‍💻
 
