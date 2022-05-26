@@ -1,52 +1,99 @@
+# PyCon 2022 Beginners' Day Workshop
+
+🇮🇹 Benvenuti al Workshop per Beginners di [PyCon 2022](https://pycon.it)! Il workshop pensato per introdurre neofiti e appassionati al linguaggio di programmazione Python.
+
+🇬🇧 Welcome to [PyCon 2022](https://pycon.it) Beginners' Day Workshop! The workshop for beginners and code practictioners to the main features of the [Python](https://python.org) programming language.
+
+
+- About the workshop [ita](#descrizione-🇮🇹) | [eng](#about-🇬🇧)
+- [Get Started](#get-started)
+- [Credits](#credits)
+- [License](#license)
+
 ### Descrizione 🇮🇹
-***
-Benvenuti! Questo progetto è pensato per introdurre i neofiti e gli appassionati di programmazione al linguaggio Python. 
 
-Il progetto consiste di un programma che misura l'affinità fra i punteggi dei Pokémon di tutte le generazioni e il punteggio di un Pokémon fittizio creato dall'utente inserendo dei punteggi a run time. 
+Durante il workshop lavoreremo su un progetto che vuole realizzare un innovativo [Motore di Ricerca](https://it.wikipedia.org/wiki/Motore_di_ricerca) per i **Pokémon**.
 
-L'algoritmo utilizzato per il calcolo dell'affinità è [KNN](https://it.wikipedia.org/wiki/K-nearest_neighbors), un semplice algoritmo di machine learning pensato proprio per misurare le distanze fra punti in spazi ad N dimensioni. I punteggi che vengono inseriti dall'utente e sui quali vengono misurate le distanze sono:
+Tale motore di ricerca includerà una speciale e super segreta tecnologia in grado di identificare i `k` Pokémon più simili ad una data [_query di ricerca_](https://it.wikipedia.org/wiki/Information_retrieval).
 
+Progetteremo e svilupperemo passo passo questa speciale tecnologia che avrà l'obiettivo di calcolare un punteggio di similirità tra Pokémon, sia esitenti che immaginari, identificati da un insieme di specifiche caratteristiche. 
+
+🧑‍💻 **Happy coding!** 👩‍💻
+
+#### Curioso di saperne di più? (⚠️  ATTENZIONE, SPOILER )
+
+Lavoreremo insieme all'implementazione dell'algoritmo [KNN](https://it.wikipedia.org/wiki/K-nearest_neighbors), un popolare e semplice algoritho di [Machine Learning](https://it.wikipedia.org/wiki/Apprendimento_automatico) pensato per misurare le distanze fra punti in spazi ad N dimensioni. 
+
+Ogni `Pokémon` nel nosto insieme di dati sarà rappresentato dalle seguenti caratteristiche:
+
+```
 - HP
-- Attack
-- Defense
-- Special attack
-- Special defense
-- Speed
+- Attacco
+- Difesa
+- Attacco Speciale
+- Difesa Speciale
+- Velocità
+```
 
-Per sviluppare questo programma non è stata utilizzata alcuna libreria esterna. 
-Gli unici moduli esterni utilizzati sono il modulo `csv` utilizzato per aprire il file CSV contenente il dataset dei Pokémon e (nella versione per jupyter notebook) il modulo `ipyplot` per dare un feedback visivo dei valori di output del programma. Il resto è sviluppato da zero con un approccio procedurale.
+Obiettivo dell'algoritmo è quello di confrontare il valore di ciascuna di queste caratteristiche, e restituire i ``k` pokémon _maggiormente simili_ (i.e. alternativamente, a minore distanza), dati i paramentri della _query di ricerca_.
 
-Happy coding!
+🧑‍💻 **Happy coding!** 👩‍💻
+
+#### Strumenti
+
+Il codice sviluppato durante il workshop non farà uso di alcuno strumento o software di terze parti che non sia direttamente incluso nell'installazione del linguaggio Python, con la sola eccezione di [`ipyplot`](https://github.com/karolzak/ipyplot) esclusivamente utilizzato per mostrare le immagini dei Pokémon.
+
+### About 🇬🇧
+
+During the workshop, we will design an innovative **Pokémon** [Search Engine](https://en.wikipedia.org/wiki/Search_engine).
+
+This engine will feature a special and super secret technology that is capable of retrieving the `k` most similar Pokémons with respect to the [_search query_](https://en.wikipedia.org/wiki/Information_retrieval).
+
+We will design and implement _step-by-step_ this core technology in order to calculate the similarities between any pair of Pokémons, either existing or _imaginary_ ones, as identified by a specified set of characteristics.
+
+🧑‍💻 **Happy coding!** 👩‍💻
+
+#### Curious to know more? (⚠️  SPOILER ALERT)
+
+We will be working on our implementation of the [KNN](https://en.wikipedia.org/wiki/K-nearest_neighbors), a very popular and simple [Machine learning](https://en.wikipedia.org/wiki/Machine_learning) algorithm designed to measure the distances between points in N-dimensional spaces.
+
+Each `Pokémon` in our dataset will be denoted by the following set of _features_:
+
+```
+* HP
+* Attack
+* Defense
+* Special attack
+* Special defense
+* Speed
+```
+
+The goal of the algorithm is to compare the values of each of those characteristics, and return the `k` _most similar_ pokémons (i.e. the ones at closest distance) given
+an input search query.
+
+#### Tools
+
+We won't be using any external libraries or software. Everything will be implemented in pure Python, using all the _batteries already included_ in the language stack.
+This is true with the **only exception of the [`ipyplot`](https://github.com/karolzak/ipyplot) package, that will be used in the _bonus material_ to display Pokémon images.
+
+The development environment used throughout the workshop will be [Jupyter](https://jupyter.org).
+
+### Get Started
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/pythonitalia/pycon-beginners-day/pycon-2022)
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://mybinder.org/v2/gh/pythonitalia/pycon-beginners-day/pycon-2022)
+
 
 ### CREDITS
-***
-- Giuseppe Mastrandrea ([Machine Learning Teacher @ Datamasters.it](https://datamasters.it/)): codice e sviluppo algoritmo
-- [Alberto Barradas](https://www.kaggle.com/datasets/abcsds/pokemon) - Dataset Pokémon 
-- [Ken Sugimori](https://veekun.com/dex/downloads) - Pokémon Art; le immagini sono state ridimensionate, compresse e trasformate in JPEG
 
-### Descrizione 🇬🇧
-***
-Welcome! This project is design to introduce beginners and passionate about programming to the Python programming language.
+- Giuseppe Mastrandrea, Machine Learning Teacher `@` [Datamasters.it](https://datamasters.it/): code, and lecture materials
+- [Alberto Barradas](https://www.kaggle.com/datasets/abcsds/pokemon) - Original Pokémon Dataset
+- [Ken Sugimori](https://veekun.com/dex/downloads) - Pokémon Arts (adapted, and compressed in JPEG for storage requirements)
 
-The project consists of a software capable of measuring the similarity between the scores of Pokémon belonging to all generations and the scores of a fake Pokémon created with the scores inserted by the user at run-time. 
+### LICENSE
 
-The algorithm used to compute the similarity is the [KNN](https://en.wikipedia.org/wiki/K-nearest_neighbors), a simple machine learning algorithm designed to measure the distances between points in N-dimensional spaces. The scores based on which the distances are computed are:
+All the **Code** material is distributed under the terms of the Apache License. See [LICENSE](./LICENSE) file for additional details.
 
-- HP
-- Attack
-- Defense
-- Special attack
-- Special defense
-- Speed
-
-During the development of the software no external libraries were used. 
-The only modules used were `csv` to handle the CSV file containing the Pokémon dataset and (in the jupyter notebook) the `ipyplot` module to give a visual feedback of the program outputs. The core of the algorithm was developed from scratch with a procedural approach. 
-
-Happy coding!
-
-### CREDITS
-***
-- Giuseppe Mastrandrea ([Machine Learning Teacher @ Datamasters.it](https://datamasters.it/)): coding 
-- [Alberto Barradas](https://www.kaggle.com/datasets/abcsds/pokemon) - Dataset Pokémon 
-- [Ken Sugimori](https://veekun.com/dex/downloads) - Pokémon Art; the images were resized, compressed and transformed in JPEG. 
-
+All the instructional materials in this repository are free to use, and made available under the [Creative Commons Attribution
+license][https://creativecommons.org/licenses/by/4.0/].
