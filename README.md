@@ -22,7 +22,7 @@ Progetteremo e svilupperemo passo passo questa speciale tecnologia che avrà l'o
 
 #### Curioso di saperne di più? (⚠️  ATTENZIONE, SPOILER )
 
-Lavoreremo insieme all'implementazione dell'algoritmo [KNN](https://it.wikipedia.org/wiki/K-nearest_neighbors), un popolare e semplice algoritho di [Machine Learning](https://it.wikipedia.org/wiki/Apprendimento_automatico) pensato per misurare le distanze fra punti in spazi ad N dimensioni. 
+Lavoreremo insieme all'implementazione dell'algoritmo [KNN](https://it.wikipedia.org/wiki/K-nearest_neighbors), un popolare e semplice metodo di [Machine Learning](https://it.wikipedia.org/wiki/Apprendimento_automatico) pensato per misurare le distanze fra punti in spazi ad N dimensioni. 
 
 Ogni `Pokémon` nel nosto insieme di dati sarà rappresentato dalle seguenti caratteristiche:
 
